@@ -1,0 +1,131 @@
+
+/* Qui mettiamo tutti i valori di css per uitlizzarli nella pagina  */
+:root{
+  --primary: #1f2a44;
+  --accent: #f4a261;
+  --bg: #f5f7fb;
+  --sidebar: #e9edf5;
+  --card: #ffffff;
+  --text: #1a1a1a;
+}
+
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Qui mettiamo i colore  del body */
+body{
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* LINK */
+a{
+  color: white;
+  text-decoration: none;
+}
+/* Togliomo i punti della lista */
+li{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 20px;
+  color: white;
+}
+
+header ul{
+  display: flex;
+  gap: 20px;
+}
+/* al passaggio del mouise le scrittte cambiano colore */
+header a:hover{
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+/* LAYOUT */
+.layout{
+  display: flex;
+  min-height: 80vh;
+}
+
+/* SIDEBAR */
+aside{
+  width: 250px;
+  background-color: var(--sidebar);
+  padding: 20px;
+}
+
+/* MAIN */
+main{
+  flex: 1;
+  padding: 20px;
+}
+
+main h1{
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+/* GRID per le immagini */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card{
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* al passaggio del mause con le card si spostano in alto e fanno vedere una hombra */
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+
+.card h3{
+  padding: 10px;
+  color: var(--primary);
+}
+
+.card p{
+  padding: 0 10px 10px;
+  color: #555;
+}
+
+/* PREZZO */
+.price{
+  font-weight: bold;
+  color: var(--accent);
+  padding: 0 10px 10px;
+}
+
+/* FOOTER */
+footer{
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
