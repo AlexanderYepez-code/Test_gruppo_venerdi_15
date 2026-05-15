@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #ffffff;
+    height: 90px;
+    /* Leggermente più alto per far risaltare il logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6439e6;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 90px;
+    /* Regola l'altezza del logo */
+    width: auto;
+    /* Mantiene le proporzioni originali */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+main {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f4f4f4;
+    padding: 40px 5%;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+.hero {
+    /* Crea un velo opaco sopra l'immagine */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                      url('centros-comerciales-cdmx-1024x683.jpg');
+    
+    background-size: cover;        /* Copre l'intera area */
+    background-position:initial;   /* Centra l'immagine */
+    height: 100vh;                 
+    display: flex;
+    justify-content: center;       /* Centra orizzontalmente il testo */
+    align-items: center;           /* Centra verticalmente il testo */
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* BOX DEL TESTO */
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.hero-content .discount {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e63946; 
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a; /* Nero antracite elegante */
+    color: #ffffff;
+    padding: 60px 5% 20px 5%;
+    font-size: 0.9rem;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
